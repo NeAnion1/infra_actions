@@ -70,7 +70,7 @@ jobs:
           script:
             # Выполняет pull образа с DockerHub
             sudo docker pull NeAnion1/infra_actions 
-            #остановка всех контейнеров
+            #остановка всех контейнеро
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 NeAnion1/infra_actions 
 
